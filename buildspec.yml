@@ -52,6 +52,7 @@ phases:
                 targetPort: 8080
             selector:
               app: $_PROJECT_NAME
+            type: ClusterIP  
           EOF
       - |
           cat  <<EOF | kubectl apply -f -
